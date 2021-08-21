@@ -1,3 +1,5 @@
+# Disclaimer: Windows sucks dogs so it may have fucked up the source by using CRLF, download from the [releases](https://github.com/khanhmuy/hackintosh-inspiron-3458/releases) tab
+
 # hackintosh-inspiron-3458
 ## Supported macOS versions: High Sierra, Mojave, Catalina, BigSur
 
