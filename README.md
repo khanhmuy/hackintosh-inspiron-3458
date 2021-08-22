@@ -47,13 +47,13 @@ You can use it however you like, except for commercial purposes (such as work en
 - Follow [OpenCore's guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/) on how to download and copy the online installer to your USB drive
 - Get the [opencorepkg](https://github.com/acidanthera/OpenCorePkg/releases), copy the **contents** of X64 to the root of the USB drive
 - Replace the **contents** of EFI\OC on your USB drive with the EFI folder that you downloaded from this repository
-**Bios configuration**
-Bios Config | Setting 
-:---:| :---:
-Intel SpeedStep | Enabled
-Virtualization    | Enabled
-USB Wake Support | Disabled
-SATA Operation | AHCI
+**UEFI Configuration**
+| UEFI Configuration | Set |
+|---|---|
+| Intel SpeedStep | Enabled |
+| Virtualization | Enabled |
+| USB Wake Support  | Disabled |
+| SATA Operation | AHCI |
 
 ## Installation and Post-installation
 - Follow [OpenCore's installation guide](https://dortania.github.io/OpenCore-Install-Guide/installation/installation-process.html#double-checking-your-work) then [OpenCore's Post-Install Guide](https://dortania.github.io/OpenCore-Post-Install/)
