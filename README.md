@@ -18,7 +18,7 @@
 - Native Power Management
 - Bluetooth
 - USB ports
-- Battery status (kinda sloopy tho)
+- Battery readout (kinda sloopy tho)
 - Keyboard & Trackpad
 - Internal Audio & Microphone
 - Headphone Jack
@@ -36,6 +36,7 @@
 ## Known issues
 - Sleep (as mentioned above)
 - Proper brightness control remap
+- Touchpad is kinda *fuckyfucky* on 0.7.1
 
 ## Usage
 You can use it however you like, except for commercial purposes (such as work enviroments and reselling their Hackintosh), refer to the [Psystar case](https://en.wikipedia.org/wiki/Psystar_Corporation)
