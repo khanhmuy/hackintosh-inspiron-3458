@@ -39,9 +39,9 @@
 - Touchpad is kinda *fuckyfucky* on 0.7.1
 
 ## Usage
-You can use it however you like, except for commercial purposes (such as work enviroments and reselling their Hackintosh), refer to the [Psystar case](https://en.wikipedia.org/wiki/Psystar_Corporation)
+You can use it however you like, except for commercial purposes (such as work enviroments and reselling your Hackintosh), refer to the [Psystar case](https://en.wikipedia.org/wiki/Psystar_Corporation)
 
-*I expect you to have already read through OpenCore's guide **at least** one so this is only a vague guide*
+*I expect you to have already read through OpenCore's guide **at least** once so this is only a vague guide*
 ## Pre-installation
 ### Creating the installer
 - Follow [OpenCore's guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/) on how to download and copy the online installer to your USB drive
