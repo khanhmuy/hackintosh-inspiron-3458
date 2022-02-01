@@ -9,14 +9,17 @@
 
 - Supported macOS versions: High Sierra, Mojave, Catalina, Big Sur (Use 0.7.7 if you want to boot Big Sur or newer) (Monterey should work, ~~I just haven't tested it yet and I'm not gonna spend another 3 hours setting everything up~~)
 
-## Disclaimer
+## Info / Disclaimer
 ### Usage
 You can use it however you like, except for commercial purposes (such as work enviroments and reselling your Hackintosh), refer to the [Psystar case](https://en.wikipedia.org/wiki/Psystar_Corporation). TLDR, you'll get your ass sued if you do so.
 - Reminder that this is only a base for your OpenCore setup, it is strongly recommended that you follow the entire OpenCore guide [here](https://dortania.github.io/OpenCore-Install-Guide/)
-- There will be differences probably even for the same line of machine, however if you're feeling lazy I guess you can just copy the config, just remember to add in information such as the MLB or the ROM in `PlatformInfo` (please don't use mine).
-
-## Notes
+- There will be differences probably even for the same line of machine, however if you're feeling lazy I guess you can just copy the config, just remember to add in information such as the MLB or the ROM in `PlatformInfo` (please don't use mine), and try to use different Apple IDs if you're booting multiple macOS verions as my account got flagged sus by not doing so :tr:.
+### Notes
 Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
+### Issues
+- Sleep doesn't work
+- Brightness controls *do* work, but you have to use Fn+S and Fn+B
+- Most of the kexts here are `DEBUG` versions, which may increase boot times. Replace them if you're bothered.
 
 ## Hardware
 
