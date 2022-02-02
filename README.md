@@ -19,7 +19,8 @@ Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
 ### Issues
 - Sleep doesn't work
 - Brightness controls *do* work, but you have to use Fn+S and Fn+B
-- Most of the kexts here are `DEBUG` versions, which may increase boot times. Replace them if you're bothered.
+- Most of the kexts and OC itself are `DEBUG` versions, which may increase boot times. Replace them if you're bothered. (not needed in 0.7.7)
+- Booting on 0.7.7 is a bit hit or miss, sometimes it doesn't boot at all, other times it boots but take a long time and would not have graphics accleration. Works most of the time though
 
 ## Hardware
 
