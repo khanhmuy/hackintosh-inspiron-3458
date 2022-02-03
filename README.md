@@ -1,6 +1,6 @@
 # hackintosh-inspiron-3458
 ## Intro
-![About This Mac](https://i.imgur.com/k71kCan.png)
+![About This Mac](https://i.imgur.com/OzJVxRl.png)
 
 |          | Version                 |
 |----------|-------------------------|
