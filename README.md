@@ -1,4 +1,4 @@
-# hackintosh-inspiron-3458
+# <div align="center">hackintosh-inspiron-3458</div>
 ## Intro
 ![About This Mac](https://i.imgur.com/OzJVxRl.png)
 
@@ -13,7 +13,7 @@
 ### Usage
 - You can use it however you like, except for commercial purposes (such as work enviroments and reselling your Hackintosh), refer to the [Psystar case](https://en.wikipedia.org/wiki/Psystar_Corporation). TLDR, you'll get your ass sued if you do so.
 - Reminder that this is only a base for your OpenCore setup, it is strongly recommended that you follow the entire OpenCore guide [here](https://dortania.github.io/OpenCore-Install-Guide/)
-- There will be differences probably even for the same line of machine, however if you're feeling lazy I guess you can just copy the config, just remember to add in information such as the MLB or the ROM in `PlatformInfo` (please don't use mine), and try to use different Apple IDs if you're booting multiple macOS verions as my account got flagged sus by not doing so.
+- There will be differences probably even for the same line of machine, however if you're feeling lazy I guess you can just copy the config, just remember to add in information such as the MLB or the ROM in `PlatformInfo` (please don't use mine), and try to use different Apple IDs if you're booting multiple macOS verions on the same PlatformInfo as my account got flagged sus by not doing so.
 ### Notes
 Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
 ### Issues
@@ -43,4 +43,4 @@ Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
 | ``Touchpad``                              | Dell Touchpad (Synaptics SMBus, I2C)                                                                | No issues. ACPI should be patched to enable gesture                                                                                           |
 | ``Dimensions``<br>``Weight``<br>``Power`` | 21.4mm x 345mm x 243mm<br>1.8kg<br>45W Power Adapter                        | ACPI patches won't help with these                                                                                                            |
 
-readme prouldly ~~stolen from~~ inspired by [beerpiss](https://github.com/beerpiss/dell-vostro-15-3568-hackintosh)'s
+<div align="center">readme prouldly ~~stolen from~~ inspired by [beerpiss](https://github.com/beerpiss/dell-vostro-15-3568-hackintosh)'s</div>
