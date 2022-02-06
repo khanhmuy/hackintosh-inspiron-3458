@@ -43,4 +43,4 @@ Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
 | ``Touchpad``                              | Dell Touchpad (Synaptics SMBus, I2C)                                                                | No issues. ACPI should be patched to enable gesture                                                                                           |
 | ``Dimensions``<br>``Weight``<br>``Power`` | 21.4mm x 345mm x 243mm<br>1.8kg<br>45W Power Adapter                        | ACPI patches won't help with these                                                                                                            |
 
-<div align="center">readme prouldly ~~stolen from~~ inspired by [beerpiss](https://github.com/beerpiss/dell-vostro-15-3568-hackintosh)'s</div>
+readme prouldly ~~stolen from~~ inspired by [beerpiss](https://github.com/beerpiss/dell-vostro-15-3568-hackintosh)'s
