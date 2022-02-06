@@ -1,6 +1,6 @@
 # <div align="center">hackintosh-inspiron-3458</div>
 ## Intro
-![About This Mac](https://i.imgur.com/OzJVxRl.png)
+![About This Mac](https://cdn.discordapp.com/attachments/885809091459575828/939824623082700810/unknown.png)
 
 |          | Version                 |
 |----------|-------------------------|
