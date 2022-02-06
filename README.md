@@ -15,7 +15,10 @@
 - Reminder that this is only a base for your OpenCore setup, it is strongly recommended that you follow the entire OpenCore guide [here](https://dortania.github.io/OpenCore-Install-Guide/)
 - There will be differences probably even for the same line of machine, however if you're feeling lazy I guess you can just copy the config, just remember to add in information such as the MLB or the ROM in `PlatformInfo` (please don't use mine), and try to use different Apple IDs if you're booting multiple macOS verions on the same PlatformInfo as my account got flagged sus by not doing so.
 ### Notes
-Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
+- Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
+- After installation, open System Preferences and go to Displays -> Color, uncheck `Show profiles for this display only`, then select `Generic RGB Profile`, this will make your colors look right (deffo not calibrated or anything but yeah, not an oversaturated mess)
+ 
+![color](https://cdn.discordapp.com/attachments/881509316392263703/938730218653356032/unknown.png)
 ### Issues
 - Sleep doesn't work
 - Brightness controls *do* work, but you have to use Fn+S and Fn+B
@@ -30,7 +33,7 @@ Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
 | ``CPU``                                   | Intel Core i3-4005U Processor, 2 Cores / 4 Threads, 0.8GHz / 1.7GHz, 3MB Cache | Native power management works                                                                                                                                               |
 | ``Memory``                                | 4GB DDR3-1600MHz, up to 8GB                                     |                                                                                                                                               |
 | ``GPU``                                   | Intel HD Graphics 4400                                                       | Graphics accleration works                                                                                                                                              |                                                                                         |
-| ``Storage``                               | Kingston A400 SATA SSD 240GB (for the love of God, use a fucking SSD; or only install High Sierra or older if you're desperate, keep in mind that it would be almost unusable)                                              |                                                                                                                                               |
+| ``Storage``                               | Kingston A400 SATA SSD 240GB                                              | For the love of God, use a fucking SSD; or only install High Sierra or older if you're desperate, keep in mind that it would be almost unusable                                                                                                                                              |
 | ``Screen``                                | 14.0" 768p 60Hz, 1366 x 768 TN                                            |                                                                                                                                               |
 | ``Webcam``                                | Integrated HD Webcam                                                          | Does not work at all                                                                                                                                             |
 | ``Ethernet``                              | RJ45 RTL8106E Realtek Ethernet                                                 | Works                                                                                                                                              |
