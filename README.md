@@ -7,7 +7,7 @@
 | OpenCore | 0.7.7                   |
 | macOS    | Big Sur 11.6.3 (20G415) |
 
-- Supported macOS versions: High Sierra, Mojave, Catalina, Big Sur (Use 0.7.7 if you want to boot Big Sur or newer) (Monterey should work, ~~I just haven't tested it yet and I'm not gonna spend another 3 hours setting everything up~~, you will need to generate and use a supported SMBIOS as well)
+- Supported macOS versions: High Sierra, Mojave, Catalina, Big Sur (Use 0.7.7 if you want to boot Big Sur or newer) (~~Monterey should work, I just haven't tested it yet and I'm not gonna spend another 3 hours setting everything up, you will need to generate and use a supported SMBIOS as well~~ Monterey definitely doesn't work lolz)
 
 ## Info / Disclaimer
 ### Usage
