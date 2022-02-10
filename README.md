@@ -1,6 +1,6 @@
 # <div align="center">hackintosh-inspiron-3458</div>
 ## Intro
-![About This Mac](https://cdn.discordapp.com/attachments/885809091459575828/941250615617675264/unknown.png)
+![About This Mac](https://cdn.discordapp.com/attachments/885809091459575828/941251443111895041/unknown.png)
 
 |          | Version                 |
 |----------|-------------------------|
@@ -19,7 +19,7 @@
 - Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
 - After installation, open System Preferences and go to Displays -> Color, uncheck `Show profiles for this display only`, then select `Generic RGB Profile`, this will make your colors look right (deffo not calibrated or anything but yeah, not an oversaturated mess)
  
-![color](https://cdn.discordapp.com/attachments/881509316392263703/938730218653356032/unknown.png)
+![color](https://cdn.discordapp.com/attachments/885809091459575828/941251743596019712/unknown.png)
 ### Issues
 - Sleep doesn't work
 - Brightness controls *do* work, but you have to use Fn+S and Fn+B
