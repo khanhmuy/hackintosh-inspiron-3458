@@ -1,4 +1,4 @@
-# <div align="center">hackintosh-inspiron-3458</div>
+# hackintosh-inspiron-3458
 ## Intro
 ![About This Mac](https://cdn.discordapp.com/attachments/885809091459575828/942225049027477564/unknown.png)
 
