@@ -14,7 +14,7 @@
 - You can use it however you like, except for commercial purposes (such as work enviroments and reselling your Hackintosh), refer to the [Psystar case](https://en.wikipedia.org/wiki/Psystar_Corporation). TLDR, you'll get your ass sued if you do so.
 - Reminder that this is only a base for your OpenCore setup, it is strongly recommended that you follow the entire OpenCore guide [here](https://dortania.github.io/OpenCore-Install-Guide/)
 - There will be differences probably even for the same line of machine, however if you're feeling lazy I guess you can just copy the config, just remember to add in information such as the MLB or the ROM in `PlatformInfo` (please don't use mine), and try to use different Apple IDs if you're booting multiple macOS verions on the same PlatformInfo as my account got flagged sus by not doing so.
-- Please use an SSD, please, please. However, do keep in mind that SSDs with lower TBWs should probably stay away from macOS 11 and newer.
+- Please use an SSD, please, please. However, do keep in mind that SSDs with lower TBWs should probably stay away from macOS 11 and newer. This can be somewhat mitigated by not logging in to iCloud (basically stops the `secd` process from running, which for some reason writes a lot)
 ### Notes
 - Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
 - After installation, open System Preferences and go to Displays -> Color, uncheck `Show profiles for this display only`, then select `Generic RGB Profile`, this will make your colors look right (deffo not calibrated or anything but yeah, not an oversaturated mess)
