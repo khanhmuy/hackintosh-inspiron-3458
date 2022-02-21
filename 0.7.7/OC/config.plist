@@ -54,6 +54,14 @@
 				<key>Path</key>
 				<string>SSDT-XOSI.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-GPRW.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-GPRW.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -208,6 +216,36 @@
 				<key>TableSignature</key>
 				<data>AAAAAA==</data>
 			</dict>
+			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>R1BSVwI=</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WFBSVwI=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
@@ -334,6 +372,10 @@
 				<data>BgAmCg==</data>
 				<key>device-id</key>
 				<data>EgQAAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-cursormem</key>
+				<data>AACQAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x3)/Pci(0x0,0x0)</key>
 			<dict>
@@ -833,22 +875,58 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>BundlePath</key>
+				<string>AirportItlwm.kext</string>
 				<key>Comment</key>
-				<string>itlwm.kext</string>
+				<string>AirportItlwm.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportItlwm</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
 				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>FakePCIID.kext</string>
+				<key>Comment</key>
+				<string>FakePCIID.kext</string>
 				<key>Enabled</key>
 				<true/>
-				<key>MinKernel</key>
-				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/itlwm</string>
+				<string>Contents/MacOS/FakePCIID</string>
 				<key>Arch</key>
 				<string>Any</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
 				<key>BundlePath</key>
-				<string>itlwm.kext</string>
+				<string>FakePCIID_Intel_HDMI_Audio.kext</string>
+				<key>Comment</key>
+				<string>FakePCIID_Intel_HDMI_Audio.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -1268,7 +1346,7 @@
 		<key>Debug</key>
 		<dict>
 			<key>AppleDebug</key>
-			<false/>
+			<true/>
 			<key>ApplePanic</key>
 			<true/>
 			<key>DisableWatchDog</key>
@@ -1364,7 +1442,7 @@
 				<key>SystemAudioVolumeDB</key>
 				<data>4g==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 debug=0x100 alcid=86</string>
+				<string>-v keepsyms=1 debug=0x100 alcid=86</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1390,9 +1468,9 @@
 			</array>
 		</dict>
 		<key>LegacyEnable</key>
-		<false/>
+		<true/>
 		<key>LegacyOverwrite</key>
-		<false/>
+		<true/>
 		<key>LegacySchema</key>
 		<dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
@@ -1435,13 +1513,13 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string></string>
+			<string>C02343303GUFD47AD</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data></data>
+			<data>IEdHMV+j</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -1449,9 +1527,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookAir6,2</string>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>C02LLHZ1F5V7</string>
 			<key>SystemUUID</key>
-			<string></string>
+			<string>62F0AA80-5AB6-4535-BB67-0AA8605A36D5</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
