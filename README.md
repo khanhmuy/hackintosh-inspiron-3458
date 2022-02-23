@@ -16,7 +16,7 @@
 - There will be differences probably even for the same line of machine, however if you're feeling lazy I guess you can just copy the config, just remember to add in information such as the MLB or the ROM in `PlatformInfo` (please don't use mine), and try to use different Apple IDs if you're booting multiple macOS verions on the same PlatformInfo as my account got flagged sus by not doing so.
 - Please use an SSD, please, please. However, do keep in mind that SSDs with lower TBWs should probably stay away from macOS 11 and newer. This can be mitigated by not logging in to iCloud (basically stops the `secd` process from running, which for some reason writes a lot, I wish I had known this sooner).
 ### Issues
-- ~~Sleep doesn't work.~~ HOLY FUCK SLEEPS WORKS NOW. Thanks to [DannyVn2000](https://github.com/NLTD2010) for letting me know how to fix it and ~~fucking up my efi without letting me back that up~~
+- ~~Sleep doesn't work.~~ HOLY FUCK SLEEPS WORKS NOW. Thanks to @NLTD2010[](https://github.com/NLTD2010) for letting me know how to fix it and ~~fucking up my efi without letting me back that up~~
 - The webcam doesn't work.
 - Audio over HDMI doesn't work (will try to fix)
 - Brightness controls *do* work, but you have to use Fn+S and Fn+B.
