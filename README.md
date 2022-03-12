@@ -1,13 +1,13 @@
 # hackintosh-inspiron-3458
 ## Intro
-![About This Mac](https://media.discordapp.net/attachments/885809091459575828/949673236210274304/unknown.png)
+![About This Mac](https://cdn.discordapp.com/attachments/885809091459575828/952168289793110046/unknown.png)
 
 |          | Version                 |
 |----------|-------------------------|
 | OpenCore | 0.7.7                   |
-| macOS    | Big Sur 11.6.3 (20G415) |
+| macOS    | Monterey 12.2.1 (21D62) |
 
-- Supported macOS versions: High Sierra, Mojave, Catalina, Big Sur (Use 0.7.7 if you want to boot Big Sur or newer, High Sierra, Mojave, Catalina not tested on 0.7.7) (~~Monterey should work, I just haven't tested it yet and I'm not gonna spend another 3 hours setting everything up, you will need to generate and use a supported SMBIOS as well~~ Monterey definitely doesn't work lolz)
+- Supported macOS versions: High Sierra, Mojave, Catalina, Big Sur, Monterey (Use 0.7.7 if you want to boot Big Sur or newer, High Sierra, Mojave, Catalina not tested on 0.7.7) (If you want to use Monterey, use the `MacBookPro11,4` SMBIOS, otherwise use the `MacBookAir6,2` SMBIOS for less hassle)
 
 ## Info / Disclaimer
 ### Usage
