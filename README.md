@@ -14,13 +14,14 @@
 - You can use it however you like, except for commercial purposes (such as work enviroments and reselling your Hackintosh), refer to the [Psystar case](https://en.wikipedia.org/wiki/Psystar_Corporation). TLDR, you'll get your ass sued if you do so.
 - Reminder that this is only a base for your OpenCore setup, it is strongly recommended that you follow the entire OpenCore guide [here](https://dortania.github.io/OpenCore-Install-Guide/)
 - There will be differences probably even for the same line of machine, however if you're feeling lazy I guess you can just copy the config, just remember to add in information such as the MLB or the ROM in `PlatformInfo` (please don't use mine), and try to use different Apple IDs if you're booting multiple macOS verions on the same PlatformInfo as my account got flagged sus by not doing so.
-- Please use an SSD, please, please. However, do keep in mind that SSDs with lower TBWs should probably stay away from macOS 11 and newer. This can be mitigated by not logging in to iCloud (basically stops the `secd` process from running, which for some reason writes a lot, I wish I had known this sooner). The thing legit written 20 FUCKING TERRABYTES TO MY POOR 3-WEEK-OLD SSD
+- Please use an SSD, please, please. However, do keep in mind that SSDs with lower TBWs should probably stay away from macOS 11 and newer. This can be mitigated by not logging in to iCloud (basically stops the `secd` process from running, which for some reason writes a lot, I wish I had known this sooner). The thing legit wrote 30 FUCKING TERRABYTES TO MY POOR 3-WEEK-OLD SSD
+- **DO NOT USE ANY INSTALLER NOT FROM APPLE**, no one knows if/how they've been tampered with, and they *always* break the APFS system volume seal, which breaks OTA updates, and are generally not trustworthy at all.
 ### Issues
 - ~~Sleep doesn't work.~~ HOLY FUCK SLEEPS WORKS NOW. WEBCAM WORKS AS WELL. Thanks to [NLTD2010](https://github.com/NLTD2010) for letting me know how to fix it and ~~fucking up my efi without letting me back the thing up~~
 - Audio over HDMI doesn't work (~~will try to fix~~ nah too lazy sorry)
-- Brightness controls *do* work, but you have to use Fn+S and Fn+B.
+- Brightness controls *do* work, but you have to use ~~Fn+S~~ F11 and ~~Fn+B~~ F12.
 - Most of the kexts and OC itself are `DEBUG` versions, which may increase boot times. Replace them if you're bothered (not needed in 0.7.7).
-- Booting on 0.7.7 is a bit hit or miss, sometimes it doesn't boot at all, other times it boots but take a long time and would boot to safe mode and not have graphics accleration. Works most of the time though, try again if it doesn't. Also try to boot with `-v`, will be helpful when the thing doesn't boot.
+- The right trackpad button doesn't work (although who tf cares when you've got basically perfect gesture support).
 ### Notes
 - Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
 - After installation, open System Preferences and go to Displays -> Color, uncheck `Show profiles for this display only`, then select `Generic RGB Profile`, this will make your colors look right (deffo not calibrated or anything but yeah, not an oversaturated mess)
