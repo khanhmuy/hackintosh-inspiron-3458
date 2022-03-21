@@ -7,17 +7,18 @@
 | OpenCore | 0.7.7                   |
 | macOS    | Monterey 12.2.1 (21D62) |
 
-- Supported macOS versions: High Sierra, Mojave, Catalina, Big Sur, Monterey (Use 0.7.7 if you want to boot Big Sur or newer, High Sierra, Mojave, Catalina not tested on 0.7.7) (If you want to use Monterey, use the `MacBookPro11,4` SMBIOS, otherwise use the `MacBookAir6,2` SMBIOS for less hassle)
+- Supported macOS versions: High Sierra, Mojave, Catalina, Big Sur, Monterey (Use 0.7.7 if you want to boot Big Sur or newer) (If you want to use Monterey, use the `MacBookPro11,4` SMBIOS, otherwise use the `MacBookAir6,2` SMBIOS for less hassle)
 
 ## Info / Disclaimer
 ### Usage
 - You can use it however you like, except for commercial purposes (such as work enviroments and reselling your Hackintosh), refer to the [Psystar case](https://en.wikipedia.org/wiki/Psystar_Corporation). TLDR, you'll get your ass sued if you do so.
 - Reminder that this is only a base for your OpenCore setup, it is strongly recommended that you follow the entire OpenCore guide [here](https://dortania.github.io/OpenCore-Install-Guide/)
 - There will be differences probably even for the same line of machine, however if you're feeling lazy I guess you can just copy the config, just remember to add in information such as the MLB or the ROM in `PlatformInfo` (please don't use mine), and try to use different Apple IDs if you're booting multiple macOS verions on the same PlatformInfo as my account got flagged sus by not doing so.
-- Please use an SSD, please, please. However, do keep in mind that SSDs with lower TBWs should probably stay away from macOS 11 and newer. This can be mitigated by not logging in to iCloud (basically stops the `secd` process from running, which for some reason writes a lot, I wish I had known this sooner). The thing legit wrote 30 FUCKING TERRABYTES TO MY POOR 3-WEEK-OLD SSD
+- Remember to disable Apple Secure Boot before installing any version that is older than Big Sur.
+- Please use an SSD, please, please. However, do keep in mind that SSDs with lower TBWs should probably stay away from macOS 11 and newer. This can be mitigated by not logging in to iCloud (basically stops the `secd` process from running, which for some reason writes a lot, I wish I had known this sooner). The thing legit wrote 30 FUCKING TERRABYTES TO MY POOR 3-WEEK-OLD SSD.
 - **DO NOT USE ANY INSTALLER NOT FROM APPLE**, no one knows if/how they've been tampered with, and they *always* break the APFS system volume seal, which breaks OTA updates, and are generally not trustworthy at all.
 #### Post-install
-- [Disable CFG Lock](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell): my offset is `0x37`, found on whatever the heck is latest, probably best to update your firmware before doing stuff like this as well.
+- [Disable CFG Lock](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell): my offset is `0x37`, found on whatever the heck is latest, probably best to update your firmware before doing stuff like this as well. Or if you don't want to disable it, or while installing, enable `Kernel -> Quirks -> AppleXcpmCfgLock`.
 ### Issues
 - ~~Sleep doesn't work.~~ HOLY FUCK SLEEPS WORKS NOW. WEBCAM WORKS AS WELL. Thanks to [NLTD2010](https://github.com/NLTD2010) for letting me know how to fix it and ~~fucking up my efi without letting me back the thing up~~
 - Audio over HDMI doesn't work (~~will try to fix~~ nah too lazy sorry)
