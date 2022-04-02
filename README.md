@@ -5,11 +5,16 @@
 |          | Version                 |
 |----------|-------------------------|
 | OpenCore | 0.7.7                   |
-| macOS    | Monterey 12.2.1 (21D62) |
+| macOS    | Big Sur 11.6.5 (20G5D7) |
 
-- Supported macOS versions: High Sierra, Mojave, Catalina, Big Sur, Monterey (Use 0.7.7 if you want to boot Big Sur or newer) (If you want to use Monterey, use the `MacBookPro11,4` SMBIOS, otherwise use the `MacBookAir6,2` SMBIOS for less hassle)
+- Supported macOS versions: High Sierra, Mojave, Catalina, Big Sur, Monterey (Use 0.7.7 if you want to boot Big Sur or newer).
+- Even though you can run Monterey without any deal-breaking issues, I would recommend sticking with 11 or older because of the underpowered as fuck CPU.
 
 ## Info / Disclaimer
+### Info
+- `boot-args` used: `-v alcid=86 -disable_nightshift keepsyms=1 debug=0x100 swd_panic=1`
+- `alcid`: `86`
+- Recommended SMBIOS: `MacBookAir6,2`, `MacBookPro11,4` (use this if you want to boot Monterey)
 ### Usage
 - You can use it however you like, except for commercial purposes (such as work enviroments and reselling your Hackintosh), refer to the [Psystar case](https://en.wikipedia.org/wiki/Psystar_Corporation). TLDR, you'll get your ass sued if you do so.
 - Reminder that this is only a base for your OpenCore setup, it is strongly recommended that you follow the entire OpenCore guide [here](https://dortania.github.io/OpenCore-Install-Guide/)
@@ -22,10 +27,9 @@
 ### Issues
 - ~~Sleep doesn't work.~~ HOLY FUCK SLEEPS WORKS NOW. WEBCAM WORKS AS WELL. Thanks to [NLTD2010](https://github.com/NLTD2010) for letting me know how to fix it and ~~fucking up my efi without letting me back the thing up~~
 - Audio over HDMI doesn't work (~~will try to fix~~ nah too lazy sorry)
-- Brightness controls *do* work, but you have to use ~~Fn+S~~ F11 and ~~Fn+B~~ F12.
+- Brightness controls *do* work, but you have to use `Fn+S` and `Fn+B`. Fix it yourself if you're bothered.
 - Most of the kexts and OC itself are `DEBUG` versions, which may increase boot times. Replace them if you're bothered (not needed in 0.7.7).
-- The right trackpad button doesn't work (although who tf cares when you've got basically perfect gesture support).
-- The card reader doesn't work (although mine is probably dead cuz it doesn't work in Windows either :skull:
+- The card reader doesn't work (although mine is probably dead cuz it doesn't work in Windows either :skull:)
 ### Notes
 - Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
 - After installation, open System Preferences and go to Displays -> Color, uncheck `Show profiles for this display only`, then select `Generic RGB Profile`, this will make your colors look right (definitely not calibrated or anything but yeah, not an oversaturated mess)
