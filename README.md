@@ -32,9 +32,9 @@
 - The card reader doesn't work (although mine is probably dead cuz it doesn't work in Windows either :skull:)
 ### Notes
 - Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
-- After installation, open System Preferences and go to Displays -> Color, uncheck `Show profiles for this display only`, then select `Generic RGB Profile`, this will make your colors look right (definitely not calibrated or anything but yeah, not an oversaturated mess)
+- After installation, open System Preferences and go to Displays -> Color, uncheck `Show profiles for this display only`, then select `sRGB IEC61966-2.1`, this will make your colors look right (definitely not calibrated or anything but yeah, not an oversaturated mess)
  
-![color](https://cdn.discordapp.com/attachments/885809091459575828/949294054053658634/unknown.png)
+![color](https://media.discordapp.net/attachments/885809091459575828/966112499487346718/unknown.png)
 ## Hardware
 
 |                                           | Specifications                                                                | macOS Compatibility                                                                                                                   |
@@ -46,7 +46,7 @@
 | ``Storage``                               | Kingston A400 SATA SSD 240GB                                              | For the love of God, use a fucking SSD; or only install High Sierra or older if you're desperate, keep in mind that it would be almost unusable                                                                                                                                              |
 | ``Screen``                                | 14.0" 768p 60Hz, 1366 x 768 TN                                            |                                                                                                                                               |
 | ``Webcam``                                | Integrated HD Webcam                                                          | Works!                                                                                                                                            |
-| ``Ethernet``                              | RJ45 RTL8106E Realtek Ethernet                                                 | Works, 100mbps link kinda lame tho, blame Dell for that                                                                                                                                              |
+| ``Ethernet``                              | RJ45 RTL8106E Realtek Ethernet                                                 | Works.                                                                                                                                              |
 | ``WiFi``                                  | Intel(R) Dual Band Wireless AC 3160                                                        | Using [AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases)                                                                |
 | ``Bluetooth``                             | Intel                                                                         | Using [IntelBluetoothFirmware](https://openintelwireless.github.io/IntelBluetoothFirmware). |
 | ``Input & Output``                        | USB 3.0 (USB-A) x1 + USB 2.0 (USB-A) x2<br>HDMI 1.4                    | There are only 15 ports on this laptop so USB mapping isn't really needed, kext still provided though |
