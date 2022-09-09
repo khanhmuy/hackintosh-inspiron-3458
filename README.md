@@ -8,7 +8,7 @@
 | macOS    | Big Sur 11.6.5 (20G5D7) |
 
 - Supported macOS versions: High Sierra, Mojave, Catalina, Big Sur, Monterey (Use 0.7.7 if you want to boot Big Sur or newer).
-- Even though you can run Monterey without any deal-breaking issues, I would recommend sticking with 11 or older because of the underpowered as fuck CPU.
+- Even though you can run Monterey without any deal-breaking issues, I would recommend sticking with 11 or older because of the underpowered as fuck CPU and excessive paging. Monterey kexts will not be included with 0.8.4 and newer.
 
 ## Info / Disclaimer
 ### Info
@@ -25,14 +25,14 @@
 #### Post-install
 - [Disable CFG Lock](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell): my offset is `0x37`, found on whatever the heck is latest, probably best to update your firmware before doing stuff like this as well. Or if you don't want to disable it, or while installing, enable `Kernel -> Quirks -> AppleXcpmCfgLock` (Enabled by default).
 ### Issues
-- ~~Sleep doesn't work.~~ HOLY FUCK SLEEPS WORKS NOW. WEBCAM WORKS AS WELL. Thanks to [NLTD2010](https://github.com/NLTD2010) for letting me know how to fix it and ~~fucking up my efi without letting me back the thing up~~
+- ~~Sleep doesn't work.~~ HOLY FUCK SLEEPS WORKS NOW. WEBCAM WORKS AS WELL. Thanks to [NLTD2010](https://github.com/NLTD2010) for letting me know how to fix it.
 - Audio over HDMI doesn't work (~~will try to fix~~ nah too lazy sorry)
 - Brightness controls *do* work, but you have to use `Fn+S` and `Fn+B`. Fix it yourself if you're bothered.
-- Most of the kexts and OC itself are `DEBUG` versions, which may increase boot times. Replace them if you're bothered (not needed in 0.7.7).
+- Most of the kexts and OC itself are `DEBUG` versions, which may increase boot times. Replace them if you're bothered (not needed in 0.7.7 and newer).
 - The card reader doesn't work (although mine is probably dead cuz it doesn't work in Windows either :skull:)
 ### Notes
 - Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
-- After installation, open System Preferences and go to Displays -> Color, uncheck `Show profiles for this display only`, then select `sRGB IEC61966-2.1`, this will make your colors look right (definitely not calibrated or anything but yeah, not an oversaturated mess)
+- After installation, open System Preferences and go to Displays -> Color, uncheck `Show profiles for this display only`, then select `sRGB IEC61966-2.1`, this will make your colors look *somewhat* right (definitely not calibrated or anything but yeah, not an oversaturated mess)
  
 ![color](https://media.discordapp.net/attachments/885809091459575828/966112499487346718/unknown.png)
 ## Hardware
