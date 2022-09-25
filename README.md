@@ -14,7 +14,8 @@
 ### Info
 - `boot-args` used: `-v alcid=86 -disable_nightshift keepsyms=1 debug=0x100 swd_panic=1`
 - `alcid`: `86`
-- Recommended SMBIOS: `MacBookAir6,2`, `MacBookPro11,4` (use this if you want to boot Monterey)
+- Recommended SMBIOS: `MacBookAir6,2`, `MacBookPro11,4` (use this if you want to boot Monterey).
+- On 0.8.4, `ShowPicker`, `ScanPolicy` and `HideAuxilary` are set up in a way that automatically boots to a APFS partition with macOS installed without user confirmation. Adjust accordingly for installation (that's why you should read the guide).
 ### Usage
 - You can use it however you like, except for commercial purposes (such as work enviroments and reselling your Hackintosh), refer to the [Psystar case](https://en.wikipedia.org/wiki/Psystar_Corporation). TLDR, you'll get your ass sued if you do so.
 - Reminder that this is only a base for your OpenCore setup, it is strongly recommended that you follow the entire OpenCore guide [here](https://dortania.github.io/OpenCore-Install-Guide/)
