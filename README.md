@@ -8,7 +8,7 @@
 | macOS    | Big Sur 11.6.5 (20G5D7) |
 
 - Supported macOS versions: High Sierra, Mojave, Catalina, Big Sur, Monterey (Use 0.7.7 if you want to boot Big Sur or newer).
-- Even though you can run Monterey without any deal-breaking issues, I would recommend sticking with 11 or older because of the underpowered as fuck CPU and excessive paging. Monterey kexts will not be included with 0.8.4 and newer.
+- Even though you can run Monterey without any deal-breaking issues, I would recommend sticking with 11 or older because of the *very* underpowered CPU and excessive paging. Monterey kexts will not be included with 0.8.4 and newer.
 
 ## Info / Disclaimer
 ### Info
@@ -21,16 +21,15 @@
 - Reminder that this is only a base for your OpenCore setup, it is strongly recommended that you follow the entire OpenCore guide [here](https://dortania.github.io/OpenCore-Install-Guide/)
 - There will be differences probably even for the same line of machine, however if you're feeling lazy I guess you can just copy the config, just remember to add in information such as the MLB or the ROM in `PlatformInfo` (please don't use mine), and try to use different Apple IDs if you're booting multiple macOS verions on the same PlatformInfo as my account got flagged sus by not doing so.
 - Remember to disable Apple Secure Boot before installing any version older than Big Sur (Enabled by default).
-- Please use an SSD, please, please. However, do keep in mind that SSDs with lower TBWs should probably stay away from macOS 11 and newer. This can be mitigated by not logging in to iCloud (basically stops the `secd` process from running, which for some reason writes a lot, I wish I had known this sooner). The thing legit wrote 30 FUCKING TERRABYTES TO MY POOR 3-WEEK-OLD SSD.
+- Please use an SSD, please, please. However, do keep in mind that SSDs with lower TBWs should probably stay away from macOS 11 and newer. This can be mitigated by not logging in to iCloud (basically stops the `secd` process from running, which for some reason writes a lot, I wish I had known this sooner).
 - **DO NOT USE ANY INSTALLER NOT FROM APPLE**, no one knows if/how they've been tampered with, and they *always* break the APFS system volume seal, which breaks OTA updates, and are generally not trustworthy at all.
 #### Post-install
 - [Disable CFG Lock](https://github.com/dreamwhite/bios-extraction-guide/tree/master/Dell): my offset is `0x37`, found on whatever the heck is latest, probably best to update your firmware before doing stuff like this as well. Or if you don't want to disable it, or while installing, enable `Kernel -> Quirks -> AppleXcpmCfgLock` (Enabled by default).
 ### Issues
-- ~~Sleep doesn't work.~~ HOLY FUCK SLEEPS WORKS NOW. WEBCAM WORKS AS WELL. Thanks to [NLTD2010](https://github.com/NLTD2010) for letting me know how to fix it.
-- Audio over HDMI doesn't work (~~will try to fix~~ nah too lazy sorry)
+- Audio over HDMI doesn't work.
 - Brightness controls *do* work, but you have to use `Fn+S` and `Fn+B`. Fix it yourself if you're bothered.
 - Most of the kexts and OC itself are `DEBUG` versions, which may increase boot times. Replace them if you're bothered (not needed in 0.7.7 and newer).
-- The card reader doesn't work (although mine is probably dead cuz it doesn't work in Windows either :skull:)
+- The card reader doesn't work (although mine is probably dead because it doesn't work in Windows either :skull:)
 ### Notes
 - Don't use case-sensitive APFS if you want to use Steam or Adobe tools.
 - After installation, open System Preferences and go to Displays -> Color, uncheck `Show profiles for this display only`, then select `sRGB IEC61966-2.1`, this will make your colors look *somewhat* right (definitely not calibrated or anything but yeah, not an oversaturated mess)
