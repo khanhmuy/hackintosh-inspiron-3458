@@ -4,7 +4,7 @@
 
 |          | Version                 |
 |----------|-------------------------|
-| OpenCore | 0.7.7                   |
+| OpenCore | 0.8.8                   |
 | macOS    | Big Sur 11.6.5 (20G5D7) |
 
 - Supported macOS versions: High Sierra, Mojave, Catalina, Big Sur, Monterey (Use 0.7.7 if you want to boot Big Sur or newer).
